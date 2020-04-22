@@ -9,6 +9,7 @@ package BaiTap1;
  *
  * @author Cam Ly
  */
-public class BaiTap1Main {
-    
+public interface ITinh 
+{
+    float tinh(float a, float b);
 }
