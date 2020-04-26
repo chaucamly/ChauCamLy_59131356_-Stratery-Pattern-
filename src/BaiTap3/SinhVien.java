@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package BaiTap3;
-import java.util.Date;
 
 /**
  *
@@ -12,44 +11,47 @@ import java.util.Date;
  */
 public class SinhVien 
 {
-    private String hoTen;
-    private Date ngaySinh;
-    private float diemTB;
-    public SinhVien(String hoTen, Date ngaySinh, float diemTB)
-    {
-        this.hoTen=hoTen;
-        this.ngaySinh=ngaySinh;
-        this.diemTB=diemTB;
+    String hoTen;
+    String ngaySinh;
+    float diemTB;
+
+    public SinhVien(String hoTen, String ngaySinh, float diemTB) {
+        this.hoTen = hoTen;
+        this.ngaySinh = ngaySinh;
+        this.diemTB = diemTB;
+    }
+
+    
+    
+    public String getHoTen() {
+        return hoTen;
     }
 
     public void setHoTen(String hoTen) {
         this.hoTen = hoTen;
     }
 
-    public String getHoTen() {
-        return hoTen;
-    }
-
-    public void setNgaySinh(Date ngaySinh) {
-        this.ngaySinh = ngaySinh;
-    }
-
-    public Date getNgaySinh() {
+    public String getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setDiemTB(float diemTB) {
-        this.diemTB = diemTB;
+    public void setNgaySinh(String ngaySinh) {
+        this.ngaySinh = ngaySinh;
     }
 
     public float getDiemTB() {
         return diemTB;
     }
 
+    public void setDiemTB(float diemTB) {
+        this.diemTB = diemTB;
+    }
+    
+    
     @Override
     public String toString() 
     {
-        return  "Họ tên sinh viên" +hoTen + ". "
+        return  "Họ tên sinh viên: " +hoTen + ". "
                 + "Ngày sinh: " + ngaySinh + ". "
                 + "Điểm trung bình: " + diemTB + ". ";
     }

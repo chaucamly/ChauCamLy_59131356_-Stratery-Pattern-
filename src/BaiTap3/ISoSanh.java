@@ -8,6 +8,7 @@ package BaiTap3;
 /**
  *
  * @author Cam Ly
+ * @param <T>
  */
 public interface ISoSanh <T>
 {
