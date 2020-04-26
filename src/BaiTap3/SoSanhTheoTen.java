@@ -9,6 +9,15 @@ package BaiTap3;
  *
  * @author Cam Ly
  */
-public class SoSanhTheoTen {
-    
+public class SoSanhTheoTen implements ISoSanh<SinhVien>
+{
+    @Override
+    public int soSanh(SinhVien o1, SinhVien o2)
+    {
+        if (o1.getHoTen().compareTo(o2.getHoTen()) > 0) 
+            return 1;
+        else if (o1.getHoTen().compareTo(o2.getHoTen()) < 0) 
+            return -1;
+        return 0;
+    }
 }

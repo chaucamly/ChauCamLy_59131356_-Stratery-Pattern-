@@ -45,5 +45,12 @@ public class SinhVien
     public float getDiemTB() {
         return diemTB;
     }
-   
-}
+
+    @Override
+    public String toString() 
+    {
+        return  "Họ tên sinh viên" +hoTen + ". "
+                + "Ngày sinh: " + ngaySinh + ". "
+                + "Điểm trung bình: " + diemTB + ". ";
+    }
+ }

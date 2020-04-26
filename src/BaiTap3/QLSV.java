@@ -4,11 +4,13 @@
  * and open the template in the editor.
  */
 package BaiTap3;
-
+import java.util.Date;
 /**
  *
  * @author Cam Ly
  */
-public class QLSV {
+public class QLSV 
+{
+    
     
 }
